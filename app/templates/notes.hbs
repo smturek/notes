@@ -1,0 +1,27 @@
+<section class="markdown">
+  <h2>New Note</h2>
+  <div>
+    {{textarea value=noteCopy rows='4' placeholder="Click me! I can take Markdown and make it pretty!"}}
+  </div>
+</section>
+
+<section class="note">
+  <h2>Note Preview</h2>
+  <div class="preview">
+    {{showdown-addon noteCopy}}
+    <button {{action 'newNote'}}>Save Note</button>
+  </div>
+</section>
+
+<div class="divider">
+  <h1>Past Notes</h1>
+</div>
+
+{{#each note in model}}
+  <div class="notes">
+    <p>
+      {{note.body}}
+    </p>
+    <!-- <button {{action 'deleteNote'}}>Delete Note</button> -->
+  </div>
+{{/each}}

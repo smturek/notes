@@ -1,3 +1,108 @@
 html, body {
   margin: 20px;
+  font-family: 'Titillium Web';
+  background: #1b2f33;
+  color: #d1d1d1;
 }
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.title {
+  border-bottom: 1px solid #EF3054;
+  margin-bottom: 30px;
+}
+
+.markdown {
+  float: left;
+  width: 50%;
+}
+
+.note {
+  float: left;
+  width: 50%;
+}
+
+.note h2 {
+  margin-left: 1%;
+}
+
+.note p {
+  font-size: 1em;
+}
+
+textarea {
+  outline: black;
+  resize: none;
+  overflow: auto;
+  width: 98.6%;
+  font-size: 1em;
+  font-family: 'Titillium Web';
+  border: none;
+  background: #28502e;
+  padding: 10px;
+  border: 1px solid #8c7051;
+  color: #8c7051;
+}
+
+::-webkit-input-placeholder {
+  color: #8c7051;
+}
+
+textarea:focus {
+  border: 1px solid #47682c;
+}
+
+.divider {
+  border-bottom: 1px solid #EF3054;
+  border-top: 1px solid #EF3054;
+  clear: both;
+  margin-bottom: 2%;
+}
+
+.preview {
+  position: relative;
+  background: #28502e;
+  margin-left: 1%;
+  min-height: 118px;
+  padding-left: 10px;
+  border: 1px solid #8c7051;
+  margin-bottom: 5%;
+}
+
+.preview p {
+  color: #8c7051;
+}
+
+.preview button{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.notes {
+  float: left;
+  width: 49.5%;
+  background: #28502e;
+  border: 1px solid #8c7051;
+  margin-bottom: 1.1%;
+  min-height: 100px;
+  padding: 10px;
+  color:
+}
+
+.notes:nth-of-type(even) {
+  margin-left: 1%;
+}
+
+
+Pallette
+1b2f33 - dark blue
+28502e - dark green
+47682c - light green
+8c7051 - brown
+EF3054 - red
+d1d1d1 - gray
