@@ -22,6 +22,6 @@
     <p>
       {{note.body}}
     </p>
-    <!-- <button {{action 'deleteNote'}}>Delete Note</button> -->
+    <button {{action 'deleteNote' note.id}}>Delete Note</button>
   </div>
 {{/each}}
