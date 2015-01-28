@@ -98,6 +98,10 @@ button{
   right: 0;
   margin-bottom: 10px;
   margin-right: 10px;
+  background: #47682c;
+  border: 1px solid #8c7051;
+  color: #d1d1d1;
+  font-family: 'Titillium Web';
 }
 
 .notes {
@@ -109,7 +113,6 @@ button{
   margin-bottom: 1.1%;
   min-height: 100px;
   padding: 10px;
-  color:
 }
 
 .notes p:first-child {
