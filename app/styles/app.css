@@ -56,7 +56,6 @@ textarea:focus {
 
 .divider {
   border-bottom: 1px solid #EF3054;
-  border-top: 1px solid #EF3054;
   clear: both;
   margin-bottom: 2%;
 }
@@ -71,11 +70,29 @@ textarea:focus {
   margin-bottom: 5%;
 }
 
-.preview p {
-  color: #8c7051;
+.preview-title {
+  position: relative;
+  background: #28502e;
+  margin-left: 1%;
+  min-height: 46px;
+  padding-left: 10px;
+  border: 1px solid #8c7051;
+  margin-bottom: 1%;
 }
 
-.preview button{
+.preview-title p {
+  color: #8c7051;
+  margin: 0;
+  padding: 10px;
+}
+
+.preview p {
+  color: #8c7051;
+  margin: 0;
+  padding: 10px;
+}
+
+button{
   position: absolute;
   bottom: 0;
   right: 0;
@@ -84,6 +101,7 @@ textarea:focus {
 }
 
 .notes {
+  position: relative;
   float: left;
   width: 49.5%;
   background: #28502e;
@@ -92,6 +110,11 @@ textarea:focus {
   min-height: 100px;
   padding: 10px;
   color:
+}
+
+.notes p:first-child {
+  margin: 0;
+  border-bottom: 1px solid #EF3054;
 }
 
 .notes:nth-of-type(even) {
