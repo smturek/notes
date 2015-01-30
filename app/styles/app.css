@@ -96,6 +96,7 @@ button{
   position: absolute;
   bottom: 0;
   right: 0;
+  outline: none;
   margin-bottom: 10px;
   margin-right: 10px;
   background: #47682c;
@@ -107,10 +108,9 @@ button{
 .notes {
   position: relative;
   float: left;
-  width: 49.5%;
+  width: 100%;
   background: #28502e;
   border: 1px solid #8c7051;
-  margin-bottom: 1.1%;
   min-height: 100px;
   padding: 10px;
 }
@@ -120,8 +120,19 @@ button{
   border-bottom: 1px solid #EF3054;
 }
 
-.notes:nth-of-type(even) {
-  margin-left: 1%;
+.local-notes {
+  position: relative;
+  float: left;
+  width: 49.3%;
+  background: #47682c;
+  border: 1px solid #8c7051;
+  margin-bottom: 1.1%;
+  min-height: 100px;
+  padding: 10px;
+}
+
+.local-notes:nth-of-type(even) {
+  margin-left: 1.3%;
 }
 
 

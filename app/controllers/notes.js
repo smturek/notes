@@ -11,17 +11,13 @@ export default Ember.ArrayController.extend({
         var note = this.store.createRecord('note', { body: body, title: title });
         this.set('noteCopy', '');
         this.set('noteTitle', '');
-
         note.save();
       }
-
     },
 
-    deleteNote: function (id) {
-      var note = this.store.find('note', id).then(function(note) {
+    deleteNote: function (note) {
         note.deleteRecord();
         note.save();
-      });
     }
   }
 });

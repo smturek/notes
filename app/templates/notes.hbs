@@ -24,13 +24,5 @@
 </div>
 
 {{#each note in model}}
-  <div class="notes">
-    <p>
-      {{note.title}}
-    </p>
-    <p>
-      {{note.body}}
-    </p>
-    <button {{action 'deleteNote' note.id}}>Delete Note</button>
-  </div>
+  {{local-note note=note deleteNote="deleteNote"}}
 {{/each}}
