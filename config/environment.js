@@ -2,6 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
+    adapterURL: process.env.ADAPTER_URL,
     modulePrefix: 'notes',
     environment: environment,
     baseURL: '/',
